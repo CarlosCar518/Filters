@@ -1,8 +1,8 @@
-compress.exe: compress.o
-	gcc $? -o compress
+test.exe: test.o
+	gcc -g $? -o test
 
-compress.o: compress.c
-	gcc -c $? -o compress.o
+test.o: test.c
+	gcc -g -c $? -o test.o
 
 run:
-	@.\compress
+	@.\test
